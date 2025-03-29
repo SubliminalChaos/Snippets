@@ -18,9 +18,9 @@ d.popleft()
 print(d)
 
 d.clear()
-d.extend([3,2,1,0])
+d.extend([3, 2, 1, 0])
 print(d)
-d.extendleft([7,8,9])
+d.extendleft([7, 8, 9])
 print(d)
 
 d.rotate(1)  # negative values rotate left!  xD

@@ -21,5 +21,5 @@ class Circle:
 
 
 small = Circle(3)
-small.radius = 4     # use function as attribute
+small.radius = 4  # use function as attribute
 print(small.radius)  # use function as attribute
