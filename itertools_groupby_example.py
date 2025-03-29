@@ -1,6 +1,5 @@
 # Iterable - a data type that can be used in a for loop
 from itertools import groupby
-import operator
 
 # returns keys and groups from iterable
 

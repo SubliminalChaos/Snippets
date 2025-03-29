@@ -2,7 +2,7 @@ from collections import deque
 
 # deque is a double ended queue, can remove from both ends
 
-d = deque()
+d: deque = deque()
 
 d.append(1)
 d.append(2)
