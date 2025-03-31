@@ -6,11 +6,12 @@ except ZeroDivisionError as e:
 except TypeError as e:
     print(e)
 else:  # else clause ran when no exception
-    print('everything is fine')
+    print("everything is fine")
 finally:  # finally always ran whether exception or not
-    print('cleaning up')
+    print("cleaning up")
 
 print()
+
 
 class ValueTooHighError(Exception):
     pass
@@ -24,9 +25,10 @@ class ValueTooSmallError(Exception):
 
 def test_value(x):
     if x > 100:
-        raise ValueTooHighError('value is too high')
+        raise ValueTooHighError("value is too high")
     if x < 10:
-        raise ValueTooSmallError('value is too small', x)
+        raise ValueTooSmallError("value is too small", x)
+
 
 try:
     test_value(5)

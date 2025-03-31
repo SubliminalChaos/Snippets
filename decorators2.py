@@ -1,5 +1,6 @@
 import functools
 
+
 def repeat(num_times):
     def decorator_repeat(func):
         @functools.wraps(func)
@@ -7,12 +8,15 @@ def repeat(num_times):
             for _ in range(num_times):
                 result = func(*args, **kwargs)
             return result
+
         return wrapper
+
     return decorator_repeat
 
 
 @repeat(num_times=4)
 def greet(name):
-    print(f'hello {name}')
+    print(f"hello {name}")
 
-greet('Alex')
+
+greet("Alex")

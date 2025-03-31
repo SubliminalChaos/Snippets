@@ -11,31 +11,35 @@
 # dosomething is extended by the functionality of the mydecorator decorator
 import functools
 
+
 # decorator template; for func w/wo return value, w/wo args and more
 def start_end_decorator(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
-        print('Start')
+        print("Start")
         result = func()
-        print('End')
+        print("End")
         return result
+
     return wrapper
 
 
 def print_name1():
-    print('Alex')
+    print("Alex")
 
 
 @start_end_decorator
 def print_name2():
-    print('Alex')
+    print("Alex")
 
 
 print_name1()
 print()
 print_name2()
 
+
 def add5(x):
     return x + 5
+
 
 print(add5(10))
